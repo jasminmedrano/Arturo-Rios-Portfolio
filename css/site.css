@@ -1,0 +1,45 @@
+body {
+  margin:0;
+  background-image:  url("https://t3.ftcdn.net/jpg/03/48/26/56/360_F_348265662_eOa4VqPkCgOp4LZZpaf12JiOiZ80HtJm.jpg");
+background-size: cover;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #acb2a4;
+}
+
+.active {
+  background-color: #b9bfb0;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+color: white;
+
+}
