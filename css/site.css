@@ -3,6 +3,7 @@ body {
   background-image:  url("https://t3.ftcdn.net/jpg/03/48/26/56/360_F_348265662_eOa4VqPkCgOp4LZZpaf12JiOiZ80HtJm.jpg");
 background-size: cover;
 }
+
 .navbar {
   background: black;
   display: inline-block;
@@ -11,66 +12,59 @@ background-size: cover;
   width: 100%;
 }
 
-.navbar li {
-  display: table-cell;
-  padding: 15px;
-  min-width: 75px;
-  text-align: center;
-}
-.navbar li a {
-  display: block;
+.navbar a {
+  float: left;
+  font-size: 25px;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 32px;
-  -webkit-transition: ease-in 0.3s;
-  transition: ease-in 0.3s;
 }
-.navbar li.active a {
-  color: red;
-  text-shadow: 1px 1px 2px #14171A;
+
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
-.navbar li.marker {
-  display: inline-block;
+
+.dropdown .dropbtn {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+.dropdown-content {
+  display: none;
   position: absolute;
-  height: 2px;
-  padding: 0;
-  background: red;
-  -webkit-transition: ease-in 0.3s;
-  transition: ease-in 0.3s;
-  top: calc(100% - 2px);
-  left: 15px;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
-.navbar li.anim {
-  -webkit-animation: 0.4s shake ease-in;
-  animation: 0.4s shake ease-in;
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
-@-webkit-keyframes shake {
-  0% {
-    -webkit-transform: translateX(5px);
-    transform: translateX(5px);
-  }
-  50% {
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px);
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-  }
+
+.dropdown-content a:hover {
+  background-color: grey;
 }
-@keyframes shake {
-  0% {
-    -webkit-transform: translateX(5px);
-    transform: translateX(5px);
-  }
-  50% {
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px);
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-  }
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 h1 {
