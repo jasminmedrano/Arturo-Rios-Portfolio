@@ -1,7 +1,6 @@
 body {
 margin: 0px;
-background-image:  url("https://t3.ftcdn.net/jpg/03/48/26/56/360_F_348265662_eOa4VqPkCgOp4LZZpaf12JiOiZ80HtJm.jpg");
-background-size: cover;
+background-color: #b4d2d3;
 }
 
 .myname{
@@ -10,9 +9,11 @@ background-size: cover;
 }
 
 .iam{
+  padding-left: 20px;
   font-size: 20px;
   color: white;
 }
+
 
 .navbar {
   background: black;
