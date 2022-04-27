@@ -13,7 +13,21 @@ background-color: #b4d2d3;
   font-size: 20px;
   color: white;
 }
+#section1{
+  background-color: white;
+padding: 5px 20px;
 
+}
+
+#image{
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    border: 5px solid white;
+
+}
 
 .navbar {
   background: black;
@@ -81,8 +95,8 @@ background-color: #b4d2d3;
   display: block;
 }
 
-h1 {
-  color: white;
+h1,h2 {
+  color: black;
 }
 
 p {
